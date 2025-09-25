@@ -5,184 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Sifat Kaur</title>
-    <!-- Google Fonts for Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #fafafa; /* Light gray background */
-            margin: 0;
-            padding: 0;
-            color: #333; /* Dark gray text for readability */
-        }
-
-        header {
-            background-color: #89c9b8; /* Pastel Green */
-            color: white;
-            padding: 120px 20px;
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: 600;
-            background-image: url('https://via.placeholder.com/1500x800'); /* Optional background image */
-            background-size: cover;
-            background-position: center;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2rem;
-        }
-
-        section {
-            padding: 60px 20px;
-            text-align: center;
-            background-color: #f9f9f9;
-            margin-top: 30px;
-        }
-
-        section h2 {
-            font-size: 2.5rem;
-            color: #2b3a3f;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
-
-        .card {
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-            padding: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .card h3 {
-            color: #5a6b6f;
-        }
-
-        .card p {
-            color: #7c7c7c;
-        }
-
-        footer {
-            background-color: #343a40; /* Dark gray */
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        footer a {
-            color: #9c9c9c;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #d8d8d8;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin: 10px 0;
-            font-size: 1rem;
-        }
-
-        .contact-form button {
-            background-color: #007bff; /* Blue button */
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            cursor: pointer;
-            font-size: 1rem;
-            border-radius: 8px;
-        }
-
-        .contact-form button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Add a smooth fade-in animation */
-        .fade-in {
-            animation: fadeIn 1.5s ease-in-out;
-            opacity: 0;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            section h2 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Header Section -->
-    <header class="fade-in">
-        <div class="container">
-            <h1>Welcome to Dr. Sifat Kaur's Therapy Practice</h1>
-            <p>Helping you navigate life’s challenges with understanding and care.</p>
-        </div>
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Welcome to Dr. Sifat Kaur's Therapy Practice</h1>
+        <p>Helping you navigate life’s challenges with understanding and care.</p>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="fade-in">
-        <div class="container">
-            <h2>About Dr. Sifat</h2>
-            <p>Dr. Sifat Kaur is a licensed clinical psychologist with over 10 years of experience. She specializes in anxiety, depression, and trauma recovery.</p>
-        </div>
+    <section id="about" class="container py-5">
+        <h2>About Dr. Sifat</h2>
+        <p>Dr. Sifat Kaur is a licensed clinical psychologist with over 10 years of experience. She specializes in anxiety, depression, and trauma recovery.</p>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="fade-in">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <h3>Individual Therapy</h3>
-                        <p>Personal therapy sessions for managing stress, anxiety, and other personal challenges.</p>
+    <section id="services" class="container py-5">
+        <h2>Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Individual Therapy</h5>
+                        <p class="card-text">Personal therapy sessions for managing stress, anxiety, and other personal challenges.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <h3>Couples Counseling</h3>
-                        <p>Helping couples improve communication and resolve conflicts in a supportive environment.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Couples Counseling</h5>
+                        <p class="card-text">Helping couples improve communication and resolve conflicts in a supportive environment.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <h3>Trauma Recovery</h3>
-                        <p>Supportive therapy for individuals recovering from past trauma or emotional distress.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Trauma Recovery</h5>
+                        <p class="card-text">Supportive therapy for individuals recovering from past trauma or emotional distress.</p>
                     </div>
                 </div>
             </div>
@@ -190,24 +55,28 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="fade-in">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form class="contact-form" action="send-email.php" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+    <section id="contact" class="container py-5">
+        <h2>Contact Us</h2>
+        <form action="send-email.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
     </section>
 
     <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Dr. Sifat's Therapy Practice. All rights reserved.</p>
-            <p><a href="privacy-policy.html">Privacy Policy</a></p>
-        </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Dr. Sifat's Therapy Practice. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JS and Popper.js -->
